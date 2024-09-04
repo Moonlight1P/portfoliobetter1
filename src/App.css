@@ -1,5 +1,5 @@
 body{
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a665c883-531f-491e-af67-198bb5206ea6/d3n15qk-e549fda4-cbdf-41fc-8936-77ef3f68f82b.jpg/v1/fill/w_900,h_390,q_75,strp/new_portfolio_background_by_larundel_d3n15qk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzkwIiwicGF0aCI6IlwvZlwvYTY2NWM4ODMtNTMxZi00OTFlLWFmNjctMTk4YmI1MjA2ZWE2XC9kM24xNXFrLWU1NDlmZGE0LWNiZGYtNDFmYy04OTM2LTc3ZWYzZjY4ZjgyYi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.d51p-Iu-wiJ1-slcJsbsVe7wK5Do9d2Us96DUqMASj8");
+  background-image: url("https://img.freepik.com/premium-vector/geometric-dark-message-board-wallpaper-with-copy-space-modern-designs_796268-137.jpg?semt=ais_hybrid");
   background-size: cover;
 }
 
@@ -93,6 +93,24 @@ section img {
   transition: background-color 0.3s; /* Smooth transition */
 }
 span{
-  color: black;
+  color: #E1D7C6;
 
 }
+/* index.css or App.css */
+::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+
