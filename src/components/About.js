@@ -102,7 +102,7 @@ const About = () => {
         cybersecurity, and network analysis. I am enthusiastic about contributing to dynamic teams 
         and am ready to take on challenges in the evolving field of computer engineering.
       </AboutText>
-      <AboutButton href="https://drive.google.com/file/d/1VcvSSsfmLAIe0Uw2iz4Frzb4ued0e8y8/view?usp=sharing" target="_blank">My Resume</AboutButton>
+      <AboutButton href="https://drive.google.com/file/d/18RXjWNnnmIeou3IwoDE3q0hLyZoSgaon/view?usp=drive_link" target="_blank">My Resume</AboutButton>
     </AboutSection>
   );
 };

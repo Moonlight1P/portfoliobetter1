@@ -187,13 +187,14 @@ const Projects = () => {
       link: '#',
     },
     {
-      title: 'Portfolio Webpage',
-      description: 'Made a portfolio webpage describing myself and academic journey.',
+      title: 'Heart Disease Prediction',
+      description: 'Created heart disease prediction system. The system can help identify individuals who are at high risk of heart disease. It can assist healthcare professionals in making informed decisions about patient care and treatment options',
       points: [
-        'Used React, CSS, Javascript',
+        'Used python libraries to develop and train algorithm for predicting on basis of features like Age, Chest Pain, Cholesterol, Blood sugar etc.',
+        'Used Django for back-end and HTML, CSS, Javascript in front-end.',
       ],
       image: ProjectImage1,
-      link: '#',
+      link: 'https://drive.google.com/drive/folders/1Mu_4GfwqMH1v6jNdhWpY_RZ7cPtEnLPK?usp=drive_link',
     },
     // Add more projects as needed
   ];
