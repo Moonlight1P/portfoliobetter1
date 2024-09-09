@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
-import ProjectImage1 from '../Assets/Portf.png';
+import ProjectImage2 from '../Assets/images.jfif';
 
 // Keyframe Animations
 const fadeInUp = keyframes`
@@ -188,13 +188,13 @@ const Projects = () => {
     },
     {
       title: 'Heart Disease Prediction',
-      description: 'Created heart disease prediction system. The system can help identify individuals who are at high risk of heart disease. It can assist healthcare professionals in making informed decisions about patient care and treatment options',
+      description: 'Created heart disease prediction system. The system can help identify individuals who are at high risk of heart disease.',
       points: [
         'Used python libraries to develop and train algorithm for predicting on basis of features like Age, Chest Pain, Cholesterol, Blood sugar etc.',
         'Used Django for back-end and HTML, CSS, Javascript in front-end.',
       ],
-      image: ProjectImage1,
-      link: 'https://drive.google.com/drive/folders/1Mu_4GfwqMH1v6jNdhWpY_RZ7cPtEnLPK?usp=drive_link',
+      image: ProjectImage2,
+      link: '#',
     },
     // Add more projects as needed
   ];
