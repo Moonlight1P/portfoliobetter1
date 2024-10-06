@@ -1,6 +1,7 @@
 body{
-  background-image: url("https://img.freepik.com/premium-vector/geometric-dark-message-board-wallpaper-with-copy-space-modern-designs_796268-137.jpg?semt=ais_hybrid");
+  /* background-image: url("https://img.freepik.com/premium-vector/geometric-dark-message-board-wallpaper-with-copy-space-modern-designs_796268-137.jpg?semt=ais_hybrid"); */
   background-size: cover;
+  background-color: #2b3034;
 }
 
 /* General Section Styles */
@@ -110,7 +111,3 @@ span{
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
-
-
-
-

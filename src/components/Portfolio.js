@@ -29,6 +29,7 @@ const HomeSection = styled.section`
   padding: 4rem 2rem;
   background: #282c34;
   min-height: 100vh;
+  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -167,3 +168,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+

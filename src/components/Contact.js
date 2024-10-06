@@ -127,7 +127,7 @@ const Contact = () => {
       <InfoText isVisible={isVisible} delay={1}>
         Phone: +91 9860255007
       </InfoText>
-      <AboutButton isVisible={isVisible} delay={1.5} href="http://www.linkedin.com/in/pratyush-moon-64a55b2ba" target="_blank">Linkdin Profile</AboutButton>
+      <AboutButton isVisible={isVisible} delay={1.5} href="http://www.linkedin.com/in/pratyush-moon-64a55b2ba" target="_blank">Linkedin Profile</AboutButton>
     </Section>
   );
 };

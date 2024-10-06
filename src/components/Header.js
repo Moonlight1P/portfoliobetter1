@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const Nav = styled.nav`
   position: fixed;
   width: 100%;
-  background: transparent;
+  /*background: transparent;*/
+  background-color: #2b3034;
   top: 0;
   padding: 1rem 3rem;
   z-index: 1000;
