@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = styled.nav`
   position: fixed;
   width: 100%;
-  /*background: transparent;*/
   background-color: #2b3034;
   top: 0;
   padding: 1rem 3rem;
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and the rest */
+  justify-content: space-between; 
 `;
 
 const NavItemsContainer = styled.div`
@@ -28,10 +28,26 @@ const NavList = styled.ul`
   font-family: 'League spartan';
   margin: 0;
   padding: 0;
+
+  @media (max-width: 768px) {
+    display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Height of the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #2b3034;
+    z-index: 10;
+  }
 `;
 
 const NavItem = styled.li`
   margin-left: 2rem;
+
+  @media (max-width: 768px) {
+    margin: 1rem 0; /* Add space between items in mobile view */
+    text-align: center; /* Center align for mobile view */
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -40,19 +56,21 @@ const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+
   &:hover {
     color: #FF8E9E;
   }
 `;
 
 const PortfolioLogo = styled.div`
-  font-size: 2rem; /* Adjust the size to fit well with the navbar */
+  font-size: 2rem;
   font-weight: bold;
   color: #C147E9;
   cursor: pointer;
   font-family: 'Montserrat';
   display: flex;
   align-items: center;
+
   &:hover {
     color: #FF8E9E;
   }
@@ -71,37 +89,58 @@ const GitHubButton = styled.a`
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  margin-left: 2rem; /* Space between GitHub button and nav items */
+  margin-left: 2rem;
+
   &:hover {
     color: #FF8E9E;
   }
 `;
 
+const HamburgerMenu = styled.div`
+  display: none;
+  padding-right: 10px;
+  cursor: pointer;
+  color: #C147E9;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Nav>
+      <HamburgerMenu onClick={toggleMenu}>
+        {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+      </HamburgerMenu>
       <PortfolioLogo>
         <NavLink to="portfolio" smooth={true} duration={500}>Portfolio</NavLink>
       </PortfolioLogo>
       <NavItemsContainer>
-        <NavList>
+        <NavList isOpen={isOpen}>
           <NavItem>
-            <NavLink to="about" smooth={true} duration={500}>About</NavLink>
+            <NavLink to="about" smooth={true} duration={500} onClick={toggleMenu}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="projects" smooth={true} duration={500}>Projects</NavLink>
+            <NavLink to="projects" smooth={true} duration={500} onClick={toggleMenu}>Projects</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="experience" smooth={true} duration={500}>Experience</NavLink>
+            <NavLink to="experience" smooth={true} duration={500} onClick={toggleMenu}>Experience</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="skills" smooth={true} duration={500}>Skills</NavLink>
+            <NavLink to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="education" smooth={true} duration={500}>Education</NavLink>
+            <NavLink to="education" smooth={true} duration={500} onClick={toggleMenu}>Education</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="contact" smooth={true} duration={500}>Contact</NavLink>
+            <NavLink to="contact" smooth={true} duration={500} onClick={toggleMenu}>Contact</NavLink>
           </NavItem>
         </NavList>
         <GitHubButton href="https://github.com/Moonlight1P" target="_blank">
