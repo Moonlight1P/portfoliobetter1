@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
-import ProfileImage1 from '../Assets/image.png';
+import ProfileImage1 from '../Assets/imageme.png';
 
 // Keyframes for animations
 const fadeInUp = keyframes`
@@ -168,4 +168,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
 
