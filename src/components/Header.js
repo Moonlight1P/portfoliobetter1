@@ -140,6 +140,9 @@ const Header = () => {
             <NavLink to="education" smooth={true} duration={500} onClick={toggleMenu}>Education</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink to="extracurricular" smooth={true} duration={500} onClick={toggleMenu}>Extracurricular</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink to="contact" smooth={true} duration={500} onClick={toggleMenu}>Contact</NavLink>
           </NavItem>
         </NavList>

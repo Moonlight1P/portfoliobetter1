@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import styled from 'styled-components';
+import Extracurricular from './components/Extracurricular';
 import './App.css';
 
 const AppContainer = styled.div`
@@ -24,6 +25,7 @@ function App() {
       <Experience />
       <Skills />
       <Education />
+      <Extracurricular />
       <Contact />
     </AppContainer>
   );
