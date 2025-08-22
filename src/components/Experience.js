@@ -44,6 +44,7 @@ const ExperienceCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);  /*0 6px 16px rgba(0, 0, 0, 0.5)*/
   opacity: 0;
+  margin-bottom: 2rem;
   transform: translateY(50px);
   transition: all 0.5s ease-out;
   animation: ${fadeIn} 1.5s ease-out forwards;
@@ -115,6 +116,15 @@ const Experience = () => {
           <Duration>February 2024 - April 2024</Duration>
           <AboutInternship><p>I learnt to analyze and manage data with Snowflake, a widely used tool in the industry for managing organizational data.
              Completed tasks such as caching data to reduce memory consumption and billing for each query. Also learned about RBAC, timestamps, and more.</p>
+          </AboutInternship>
+        </ExperienceCard>
+
+        <ExperienceCard>
+          <Position>Cyber Security Analyst Intern</Position>
+          <Company>LTTS</Company>
+          <Duration>March 2025 - June 2025</Duration>
+          <AboutInternship><p>Worked on IBM QRadar SIEM for real-time event log monitoring, correlation, and offense investigation. Investigated offenses
+using event data and different properties to identify malicious activity patterns and close those offenses. Installed and configured MISP (Malware Information Sharing Platform) on servers for structured threat intelligence sharing.</p>
           </AboutInternship>
         </ExperienceCard>
       </Container>
