@@ -133,7 +133,8 @@ const Skills = () => {
     { name: 'Nmap', category: 'Tools' },
     { name: 'Burpsuite', category: 'Tools' },
     {name: 'IBM Qradar', category: 'Tools' },
-    {name: 'MISP', category: 'Tools'}
+    {name: 'MISP', category: 'Tools'},
+    {name: 'EMC Networker', category: 'Tools'}
   ];
 
   const sectionRef = useRef(null);

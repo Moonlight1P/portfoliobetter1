@@ -111,6 +111,15 @@ const Experience = () => {
       <Container>
         <Title>My Experience</Title>
         <ExperienceCard>
+          <Position>Analyst</Position>
+          <Company>Capgemini Technology Services India Limited</Company>
+          <Duration>July 2025 - Present</Duration>
+          <AboutInternship><p>My tasks were managing and monitoring enterprise server backups to ensure data availability, integrity, and compliance with organizational policies.
+          Also configuring and scheduling backups for Windows and Linux servers using Dell EMC NetWorker were part of my responsibilities.</p>
+          </AboutInternship>
+        </ExperienceCard>
+
+        <ExperienceCard>
           <Position>Data Analyst Intern</Position>
           <Company>LTIMindtree</Company>
           <Duration>February 2024 - April 2024</Duration>
