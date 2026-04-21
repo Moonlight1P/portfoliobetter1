@@ -173,7 +173,7 @@ const Projects = () => {
         'Implemented using TensorFlow, Flask, and scikit-learn.',
         'Handled natural language processing with Numpy and JSON.',
       ],
-      image: 'https://blog.happyfox.com/wp-content/uploads/2020/11/X-examples-of-chatbots-in-E-commerce_V1-01.png',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIEt28He9D2sFeCThVeF640VuidqimVu8zQ&s',
       link: 'https://github.com/Moonlight1P/Chatbot-E',
     },
     {
